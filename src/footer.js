@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <h6 className="footer">
       <a
-        href="https://github.com/Shahbi88/Forecasthttps://github.com/Shahbi88/Weather-React-Separate-VS-import"
+        href="https://github.com/Shahbi88/Weather-React-Separate-VS-import"
         target="_blank"
       >
         {" "}
