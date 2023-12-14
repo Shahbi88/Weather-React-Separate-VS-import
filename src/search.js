@@ -51,7 +51,7 @@ export default function Search(props) {
           </div>
           <h4 className="mainCity col">
             <div id="city">
-              {city} <img src={weatherData.iconUrl} alt="" />
+              {city} <img className="icon" src={weatherData.iconUrl} alt="" />
             </div>
             <WeatherTemperature celsius={Math.round(weatherData.temp)} />
             <div>
