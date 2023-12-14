@@ -22,6 +22,9 @@ div.card-body {
 .search-form-input {
   margin-left: 20px;
   font-size: 35px;
+  border-radius: 8px;
+  margin-right: 5px;
+  max-width: 250px;
 }
 .temp {
   color: red;
@@ -53,29 +56,23 @@ div.card-body {
   font-size: larger;
 }
 
-h4 {
-  margin-left: 200px;
-  color: darkblue;
+.mainCity {
   margin-top: 0px;
   padding-bottom: 30px;
-  display: block;
-  align-items: center;
+  margin-left: 100px;
+}
+h4 {
+  color: darkblue;
 }
 #city {
   color: brown;
   font-weight: bold;
   font-size: xx-large;
 }
-h6 {
-  font-size: xx-small;
-  margin-top: 50px;
-  margin-bottom: 7px;
-  font-size: medium;
-  align-items: center;
-  position: relative;
-  display: flexbox;
-  justify-self: center;
-  margin-left: 500px;
+.h6 {
+  font-size: x-small;
+  margin-left: 250px;
+  margin-top: 30px;
   color: grey;
 }
 body {
@@ -93,4 +90,10 @@ body {
   width: 5px;
   display: flex;
   justify-content: space-between;
+}
+.footer {
+  padding-bottom: 10px;
+}
+.number {
+  font-size: xx-large;
 }
