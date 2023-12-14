@@ -14,9 +14,10 @@ export default function Search(props) {
       let { temp, humidity } = response.data.main;
       let { description } = response.data.weather[0];
       let { speed } = response.data.wind;
-      let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
+      let { date } = response.data.dt;
 
-      setWeatherData({ temp, humidity, description, speed, iconUrl });
+      let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
+      setWeatherData({ temp, humidity, description, speed, iconUrl, date });
     });
   }
 
@@ -45,6 +46,7 @@ export default function Search(props) {
               <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
               <li>Description: {weatherData.description}</li>
               <li>Temperature: {Math.round(weatherData.temp)} °C</li>
+              <li>{weatherData.date}</li>
             </ul>
           </div>
           <h4 className="mainCity col">
