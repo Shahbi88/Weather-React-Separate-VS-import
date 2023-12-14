@@ -41,9 +41,9 @@ div.card-body {
   display: block;
 }
 .search-form-button {
-  padding: 0.3%;
-  background-color: lightseagreen;
-  font-size: x-large;
+  padding: 1%;
+  background-color: #dbdca4;
+  font-size: large;
   border-radius: 10px;
 }
 .search-form {
@@ -57,9 +57,13 @@ div.card-body {
 }
 
 .mainCity {
-  margin-top: 0px;
-  padding-bottom: 30px;
+  display: block;
   margin-left: 100px;
+  margin-right: 300px;
+  background-color: #ebecb1;
+  border-radius: 15px;
+  text-align: center;
+  padding: 5px;
 }
 h4 {
   color: darkblue;
@@ -72,6 +76,7 @@ h4 {
 .icon {
   width: 70px;
   height: auto;
+  padding: 0px;
 }
 .h6 {
   font-size: x-small;

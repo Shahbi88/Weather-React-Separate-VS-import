@@ -39,8 +39,8 @@ export default function Search(props) {
         <input type="submit" value="Search" className="search-form-button" />
       </form>
       {city && (
-        <div className="row">
-          <div className="h6 col">
+        <div>
+          <div className="h6">
             <ul>
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
@@ -49,7 +49,7 @@ export default function Search(props) {
               <li>{weatherData.date}</li>
             </ul>
           </div>
-          <h4 className="mainCity col">
+          <h4 className="mainCity">
             <div id="city">
               {city} <img className="icon" src={weatherData.iconUrl} alt="" />
             </div>
