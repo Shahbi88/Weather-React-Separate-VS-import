@@ -44,7 +44,7 @@ export default function Search(props) {
               <li>Humidity: {weatherData.humidity}%</li>
               <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
               <li>Description: {weatherData.description}</li>
-              <li>Temperature: {Math.round(weatherData.temp)}</li>
+              <li>Temperature: {Math.round(weatherData.temp)} °C</li>
             </ul>
           </div>
           <h4 className="mainCity col">
