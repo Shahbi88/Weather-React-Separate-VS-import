@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherTemperature from "./weatherTemperature";
+import WeatherForecast from "./weatherforecast";
 
 export default function Search(props) {
   let [city, setCity] = useState("Paris");
@@ -59,7 +60,6 @@ export default function Search(props) {
               <li>Description: {weatherData.description}</li>
               <li>Temperature: {Math.round(weatherData.temp)} °C</li>
               <li>{weatherData.date}</li>
-              <li>{weatherData.time}</li>
             </ul>
           </div>
           <h4 className="mainCity">
@@ -72,6 +72,7 @@ export default function Search(props) {
               <small id="time">{weatherData.time}</small>
             </div>
           </h4>
+          <WeatherForecast />
         </div>
       )}
     </div>
