@@ -7,8 +7,8 @@ export default function Search(props) {
   let [city, setCity] = useState("Paris");
   let [weatherData, setWeatherData] = useState({ ready: false });
 
-  function changeHTML(event) {
-    event.preventDefault();
+  function changeHTML(response) {
+    response.preventDefault();
 
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=667d9f573c8af4c33457be5d561a9148&units=metric`;
     axios.get(url).then((response) => {
@@ -18,6 +18,8 @@ export default function Search(props) {
       let date = new Date(response.data.dt * 1000).toDateString();
       let city = response.data.name;
       let time = new Date(response.data.dt * 1000).toLocaleTimeString();
+
+      console.log(response.data.name);
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
       setWeatherData({
@@ -68,10 +70,12 @@ export default function Search(props) {
               <img className="icon" src={weatherData.iconUrl} alt="" />
             </div>
             <WeatherTemperature celsius={Math.round(weatherData.temp)} />
+
             <div>
               <small id="time">{weatherData.time}</small>
             </div>
           </h4>
+
           <WeatherForecast />
         </div>
       )}

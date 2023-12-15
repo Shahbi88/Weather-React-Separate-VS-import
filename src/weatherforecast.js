@@ -1,7 +1,12 @@
 import React from "react";
 import "./WeatherForecast.css";
+import axios from "axios";
 
-export default function WeatherForecast() {
+export default function WeatherForecast(props) {
+  function handleResponse(response) {
+    console.log(props.data);
+  }
+
   return (
     <div className="WeatherForecast">
       <div class="row">
