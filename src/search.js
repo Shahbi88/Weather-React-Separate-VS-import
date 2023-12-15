@@ -16,6 +16,7 @@ export default function Search(props) {
       let { speed } = response.data.wind;
       let date = new Date(response.data.dt * 1000).toDateString();
       let city = response.data.name;
+      let time = new Date(response.data.dt * 1000).toLocaleTimeString();
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
       setWeatherData({
@@ -27,6 +28,7 @@ export default function Search(props) {
         speed,
         iconUrl,
         date,
+        time,
       });
     });
   }
@@ -57,6 +59,7 @@ export default function Search(props) {
               <li>Description: {weatherData.description}</li>
               <li>Temperature: {Math.round(weatherData.temp)} °C</li>
               <li>{weatherData.date}</li>
+              <li>{weatherData.time}</li>
             </ul>
           </div>
           <h4 className="mainCity">
@@ -66,7 +69,7 @@ export default function Search(props) {
             </div>
             <WeatherTemperature celsius={Math.round(weatherData.temp)} />
             <div>
-              <small id="time">Time</small>
+              <small id="time">{weatherData.time}</small>
             </div>
           </h4>
         </div>
