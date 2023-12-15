@@ -50,9 +50,10 @@ div.card-body {
 .search-form {
   margin-left: 30px;
 }
-.units {
-  margin-bottom: 20px;
+.unit {
+  text-decoration: none;
 }
+
 .text {
   font-size: larger;
 }
