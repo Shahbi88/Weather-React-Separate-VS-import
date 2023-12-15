@@ -1,0 +1,12 @@
+.WeatherForecast {
+  text-align: center;
+}
+.earlier-temperature {
+  font-weight: bolder;
+}
+.Forecast-icon {
+  font-size: x-large;
+}
+.row {
+  align-items: flex-start;
+}
