@@ -22,9 +22,6 @@ export default function Search(props) {
       let longitude = response.data.coord.lon;
       let latitude = response.data.coord.lat;
 
-      console.log(response.data.coord);
-      console.log(response.data.coord.lon);
-      console.log(response.data.coord.lat);
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
       setWeatherData({
