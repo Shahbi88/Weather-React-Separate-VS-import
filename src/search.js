@@ -3,8 +3,8 @@ import axios from "axios";
 import WeatherTemperature from "./weatherTemperature";
 
 export default function Search(props) {
-  let [city, setCity] = useState("City..");
-  let [weatherData, setWeatherData] = useState({});
+  let [city, setCity] = useState("Paris");
+  let [weatherData, setWeatherData] = useState({ ready: false });
 
   function changeHTML(event) {
     event.preventDefault();
@@ -14,10 +14,20 @@ export default function Search(props) {
       let { temp, humidity } = response.data.main;
       let { description } = response.data.weather[0];
       let { speed } = response.data.wind;
-      let { date } = response.data.dt;
+      let date = new Date(response.data.dt * 1000).toDateString();
+      let city = response.data.name;
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
-      setWeatherData({ temp, humidity, description, speed, iconUrl, date });
+      setWeatherData({
+        ready: true,
+        city,
+        temp,
+        humidity,
+        description,
+        speed,
+        iconUrl,
+        date,
+      });
     });
   }
 
@@ -38,7 +48,7 @@ export default function Search(props) {
         />
         <input type="submit" value="Search" className="search-form-button" />
       </form>
-      {city && (
+      {weatherData.ready && (
         <div>
           <div className="h6">
             <ul>
@@ -51,7 +61,8 @@ export default function Search(props) {
           </div>
           <h4 className="mainCity">
             <div id="city">
-              {city} <img className="icon" src={weatherData.iconUrl} alt="" />
+              {weatherData.city}
+              <img className="icon" src={weatherData.iconUrl} alt="" />
             </div>
             <WeatherTemperature celsius={Math.round(weatherData.temp)} />
             <div>
