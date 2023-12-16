@@ -66,8 +66,10 @@ export default function Search(props) {
               <li>Description: {weatherData.description}</li>
               <li>Temperature: {Math.round(weatherData.temp)} °C</li>
               <li>{weatherData.date}</li>
+              <li>{weatherData.date[0]}</li>
             </ul>
           </div>
+
           <h4 className="mainCity">
             <div id="city">
               {weatherData.city}
@@ -79,8 +81,12 @@ export default function Search(props) {
               <small id="time">{weatherData.time}</small>
             </div>
           </h4>
-
-          <WeatherForecast lon={weatherData.lon} lat={weatherData.lat} />
+          <WeatherForecast
+            lon={weatherData.lon}
+            lat={weatherData.lat}
+            img={weatherData.iconUrl}
+            day={weatherData.date[0]}
+          />
         </div>
       )}
     </div>
