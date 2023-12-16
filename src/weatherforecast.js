@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
   const [forecastData, setForecastData] = useState(null);
@@ -33,9 +34,9 @@ export default function WeatherForecast(props) {
               />
               <div className="forecast-temperature">
                 <span className="max-temp">
-                  {Math.round(dayForecast.temp.max)}°C
+                  {Math.round(dayForecast.temp.max)}
                 </span>{" "}
-                |{" "}
+                /{" "}
                 <span className="min-temp">
                   {Math.round(dayForecast.temp.min)}°C
                 </span>
