@@ -19,9 +19,8 @@ export default function Search(props) {
       let city = response.data.name;
       let time = new Date(response.data.dt * 1000).toLocaleTimeString();
       let coordinates = response.data.coord;
-      let longitude = response.data.coord.lon;
-      let latitude = response.data.coord.lat;
-
+      let lon = response.data.coord.lon;
+      let lat = response.data.coord.lat;
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
       setWeatherData({
@@ -35,8 +34,8 @@ export default function Search(props) {
         date,
         time,
         coordinates,
-        longitude,
-        latitude,
+        lon,
+        lat,
       });
     });
   }
@@ -81,7 +80,7 @@ export default function Search(props) {
             </div>
           </h4>
 
-          <WeatherForecast coordinates={weatherData.coordinates} />
+          <WeatherForecast lon={weatherData.lon} lat={weatherData.lat} />
         </div>
       )}
     </div>
