@@ -21,7 +21,14 @@ export default function WeatherForecast({ lon, lat }) {
   return (
     <div className="WeatherForecast">
       {forecast.length > 0 && (
-        <span className="earlier-temperature">{forecast[0].temp.max}</span>
+        <div>
+          <span className="earlier-temperature">
+            {Math.round(forecast[0].temp.max)}°
+          </span>
+          <div className="later-temperature">
+            {Math.round(forecast[0].temp.min)}°
+          </div>
+        </div>
       )}
     </div>
   );
