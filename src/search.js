@@ -64,17 +64,18 @@ export default function Search(props) {
       </form>
       {weatherData.ready && (
         <div>
-          <div className="h6">
-            <ul>
-              <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
-              <li>Description: {weatherData.description}</li>
-              <li>Temperature: {Math.round(weatherData.temp)} °C</li>
-              <li>{weatherData.date}</li>
-              <li>{weatherData.date[0]}</li>
-            </ul>
+          <div class="row">
+            <small class="col-6" id="date">
+              {weatherData.date}
+            </small>
+            <small class="col-6" className="list">
+              <ul className="h6">
+                <li>Description: {weatherData.description}</li>
+                <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
+                <li>Humidity: {weatherData.humidity}%</li>
+              </ul>
+            </small>
           </div>
-
           <h4 className="mainCity">
             <div id="city">
               {weatherData.city}
@@ -86,12 +87,7 @@ export default function Search(props) {
               <small id="time">{weatherData.time}</small>
             </div>
           </h4>
-          <WeatherForecast
-            lon={weatherData.lon}
-            lat={weatherData.lat}
-            img={weatherData.iconUrl}
-            day={weatherData.dayOfWeek}
-          />
+          <WeatherForecast lon={weatherData.lon} lat={weatherData.lat} />
         </div>
       )}
     </div>
