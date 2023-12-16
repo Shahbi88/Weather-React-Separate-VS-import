@@ -12,3 +12,7 @@
 .max-temperature {
   font-weight: bolder;
 }
+.row {
+  display: flex;
+  justify-content: space-around;
+}

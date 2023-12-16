@@ -65,10 +65,10 @@ export default function Search(props) {
       {weatherData.ready && (
         <div>
           <div class="row">
-            <small class="col-6" id="date">
+            <small class="col" id="date">
               {weatherData.date}
             </small>
-            <small class="col-6" className="list">
+            <small class="col" className="list">
               <ul className="h6">
                 <li>Description: {weatherData.description}</li>
                 <li>Wind Speed: {Math.round(weatherData.speed)} m/s</li>
