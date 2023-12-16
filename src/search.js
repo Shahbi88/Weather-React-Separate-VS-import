@@ -21,6 +21,10 @@ export default function Search(props) {
       let coordinates = response.data.coord;
       let lon = response.data.coord.lon;
       let lat = response.data.coord.lat;
+      let dayOfWeek = new Date(response.data.dt * 1000).toLocaleDateString(
+        undefined,
+        { weekday: "long" }
+      );
 
       let iconUrl = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`;
       setWeatherData({
@@ -36,6 +40,7 @@ export default function Search(props) {
         coordinates,
         lon,
         lat,
+        dayOfWeek,
       });
     });
   }
@@ -85,7 +90,7 @@ export default function Search(props) {
             lon={weatherData.lon}
             lat={weatherData.lat}
             img={weatherData.iconUrl}
-            day={weatherData.date[0]}
+            day={weatherData.dayOfWeek}
           />
         </div>
       )}
