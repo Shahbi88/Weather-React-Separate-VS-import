@@ -58,7 +58,8 @@ div.card-body {
   border-radius: 15px;
   text-align: center;
   padding: 5px;
-  display: flexbox;
+  display: inline-block;
+  font-size: smaller;
 }
 #time {
   padding-top: 10px;
@@ -73,7 +74,7 @@ h4 {
   padding-top: 10px;
   color: rgb(164, 40, 164);
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .icon {
@@ -127,4 +128,10 @@ body {
 }
 .number {
   font-size: xx-large;
+}
+.first-unit {
+  font-size: xx-large;
+}
+.unit {
+  font-size: larger;
 }
