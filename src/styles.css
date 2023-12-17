@@ -27,11 +27,6 @@ h5 {
   max-width: 250px;
 }
 
-.less {
-  text-align: auto;
-  font-size: x-small;
-  display: block;
-}
 .search-form-button {
   padding: 7px;
   background-color: #20b1a9;
@@ -43,6 +38,7 @@ h5 {
 }
 .unit {
   text-decoration: none;
+  color: saddlebrown;
 }
 
 .mainCity {
@@ -152,6 +148,7 @@ body {
   .row1 {
     display: block;
   }
+
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
