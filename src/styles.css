@@ -104,6 +104,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   padding: 100px 100px;
   border-radius: 10px;
+  background-color: #fffacd;
 }
 .weather-forecast {
   display: grid;
@@ -138,7 +139,7 @@ body {
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-
+    background-color: #fffacd;
     margin: 0px;
   }
 
