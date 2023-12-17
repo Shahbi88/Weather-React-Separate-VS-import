@@ -23,7 +23,7 @@ export default function WeatherForecast(props) {
   if (forecastData) {
     return (
       <div className="weather-forecast">
-        <div className="row">
+        <div className="forecast-row">
           {forecastData.daily.slice(1, 6).map((dayForecast) => (
             <div className="col" key={dayForecast.dt}>
               <div className="forecast-day">{formatDay(dayForecast.dt)}</div>
