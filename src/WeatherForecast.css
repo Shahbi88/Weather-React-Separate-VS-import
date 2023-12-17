@@ -11,11 +11,12 @@
 }
 .max-temp {
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 20px;
 }
 .min-temp {
   color: rgb(94, 93, 93);
   margin-top: 1px;
+  font-size: 20px;
 }
 
 .forecast-temperature {
