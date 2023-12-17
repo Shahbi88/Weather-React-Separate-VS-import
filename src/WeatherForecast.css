@@ -2,6 +2,8 @@
   text-align: center;
   margin-top: 50px;
   margin-right: 20px;
+  align-items: center;
+  align-self: center;
 }
 
 .Forecast-icon {
@@ -13,7 +15,7 @@
 }
 .min-temp {
   color: rgb(94, 93, 93);
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .forecast-temperature {

@@ -14,10 +14,9 @@ h5 {
 }
 
 .card-body {
-  background-color: #fffacd;
   align-self: center;
   align-content: center;
-  margin: auto;
+  margin-left: 50px;
   align-items: center;
 }
 .search-form-input {
@@ -56,6 +55,8 @@ h5 {
   padding: 5px;
   display: inline-block;
   font-size: smaller;
+  align-self: center;
+  align-content: center;
 }
 #time {
   padding-top: 10px;
@@ -67,6 +68,11 @@ h4 {
 }
 #city {
   padding: 15px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  align-self: center;
   padding-top: 10px;
   color: rgb(164, 40, 164);
   font-weight: bold;
@@ -100,8 +106,7 @@ h4 {
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 100px 100px;
-  border-radius: 10px;
+
   background-color: #fffacd;
 }
 .weather-forecast {
@@ -137,6 +142,12 @@ body {
   header {
     margin-left: 0px;
   }
+  .card-body {
+    display: block;
+    justify-content: center;
+    margin-left: 5px;
+    max-width: 25%;
+  }
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
@@ -148,6 +159,7 @@ body {
   .mainCity {
     display: inline;
     padding-top: 0px;
+    background-color: #f5edc3;
   }
   #city {
     color: rgb(164, 40, 164);
@@ -155,6 +167,8 @@ body {
     font-size: 26px;
     padding-top: 0px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+    display: block;
   }
   .number {
     font-size: small;
