@@ -82,10 +82,6 @@ export default function Search(props) {
               <img className="icon" src={weatherData.iconUrl} alt="" />
             </div>
             <WeatherTemperature celsius={Math.round(weatherData.temp)} />
-
-            <div>
-              <div id="time">{weatherData.time}</div>
-            </div>
           </h4>
           <WeatherForecast lon={weatherData.lon} lat={weatherData.lat} />
         </div>
