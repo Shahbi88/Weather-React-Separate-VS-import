@@ -9,7 +9,7 @@ export default function Footer() {
         target="_blank"
       >
         {" "}
-        Open-source code{" "}
+        <span className="sig"> Open-source code </span>{" "}
       </a>
       by Rihab Azar
     </h6>

@@ -12,7 +12,12 @@
 .max-temperature {
   font-weight: bolder;
 }
-.row {
+.forecast-row {
   display: flex;
   justify-content: space-around;
+  margin: auto;
+}
+.col {
+  padding-left: 40px;
+  padding-right: 40px;
 }
