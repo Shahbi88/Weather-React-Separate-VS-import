@@ -158,7 +158,9 @@ body {
     margin-right: 5px;
     max-width: 250px;
   }
-
+  .search-form {
+    display: inline-block;
+  }
   .less {
     text-align: auto;
     font-size: x-small;
