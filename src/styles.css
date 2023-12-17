@@ -17,6 +17,8 @@ h5 {
   background-color: #fffacd;
   align-self: center;
   align-content: center;
+  margin: auto;
+  align-items: center;
 }
 .search-form-input {
   margin-left: 20px;
@@ -42,10 +44,6 @@ h5 {
 }
 .unit {
   text-decoration: none;
-}
-
-.text {
-  font-size: larger;
 }
 
 .mainCity {
@@ -126,7 +124,7 @@ body {
   color: purple;
 }
 .number {
-  font-size: xx-large;
+  font-size: x-large;
 }
 .first-unit {
   font-size: xx-large;
@@ -136,21 +134,33 @@ body {
 }
 
 @media (max-width: 800px) {
+  header {
+    margin-left: 0px;
+  }
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     background-color: #fffacd;
     margin: 0px;
+    padding: 10px;
   }
 
   .mainCity {
     display: inline;
+    padding-top: 0px;
   }
   #city {
     color: rgb(164, 40, 164);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 26px;
+    padding-top: 0px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .number {
+    font-size: small;
+  }
+  .unit {
+    font-size: small;
   }
   .search-form-input {
     margin-left: 25px;
@@ -160,8 +170,10 @@ body {
     max-width: 250px;
   }
   h5 {
-    margin-left: 20px;
-    font-size: 25px;
+    align-self: center;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 0px;
   }
   .h6 {
     font-size: 12px;
@@ -169,6 +181,7 @@ body {
   }
   .search-form {
     display: inline-block;
+    align-self: center;
   }
   .less {
     text-align: auto;
