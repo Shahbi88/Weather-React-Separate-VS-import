@@ -159,6 +159,7 @@ body {
     max-width: 250px;
   }
   h5 {
+    margin-left: 20px;
     font-size: 25px;
   }
   .h6 {
