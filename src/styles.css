@@ -157,9 +157,10 @@ body {
   }
 
   .mainCity {
-    display: inline;
+    display: inline-flex;
     padding-top: 0px;
     background-color: #f5edc3;
+    margin-left: -150px;
   }
   #city {
     color: rgb(164, 40, 164);
@@ -167,12 +168,9 @@ body {
     font-size: 26px;
     padding-top: 0px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
     display: block;
   }
-  .number {
-    font-size: small;
-  }
+
   .unit {
     font-size: small;
   }
@@ -194,18 +192,20 @@ body {
     display: flexbox;
   }
   .search-form {
-    display: inline-block;
+    display: inline-flex;
     align-self: center;
+    padding-top: 0px;
   }
   .less {
     text-align: auto;
     font-size: x-small;
-    display: block;
+    display: flex;
   }
   .search-form-button {
     background-color: #20b1a9;
     font-size: 15px;
     border-radius: 8px;
     padding: 5px;
+    margin-top: 5px;
   }
 }

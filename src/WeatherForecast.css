@@ -27,8 +27,12 @@
 }
 .forecast-row {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: space-between;
   padding: 0px;
+  margin-left: 0px;
 }
 .col {
   padding-left: 40px;
@@ -42,6 +46,8 @@
     grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     margin: auto;
+    padding: 0px;
+    margin-left: -230px;
   }
   .col {
     margin-top: 0px;
