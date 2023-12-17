@@ -13,12 +13,10 @@ h5 {
   font-size: x-large;
 }
 
-div.card-body {
+.card-body {
   background-color: #fffacd;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-right: 100px;
-  margin-left: 40px;
+
+  display: inline-block;
 }
 .search-form-input {
   margin-left: 20px;
@@ -135,6 +133,7 @@ body {
 .unit {
   font-size: larger;
 }
+
 @media (max-width: 800px) {
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
