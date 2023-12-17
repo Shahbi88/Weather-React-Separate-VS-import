@@ -31,3 +31,10 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+@media (max-width: 800px) {
+  .forecast-row {
+    display: block;
+    justify-content: space-around;
+    margin: auto;
+  }
+}

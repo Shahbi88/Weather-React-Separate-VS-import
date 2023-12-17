@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherTemperature from "./weatherTemperature";
 import WeatherForecast from "./weatherforecast";
+import "./styles.css";
 
 export default function Search(props) {
   let [city, setCity] = useState(props.defaultCity);
