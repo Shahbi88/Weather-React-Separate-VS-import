@@ -156,7 +156,12 @@ body {
     margin: 0px;
     padding: 10px;
   }
-
+  ul {
+    padding-top: 10px;
+    display: grid;
+    row-gap: 5px;
+    text-align-last: ;
+  }
   .mainCity {
     display: inline-block;
 
