@@ -89,19 +89,20 @@ h4 {
   list-style: none;
   font-size: x-small;
 }
+
 .row {
-  margin-top: 15px;
-  display: flex;
+  display: flexbox;
+  padding-bottom: 10px;
 }
+
 #date {
-  color: rgb(66, 83, 37);
+  color: rgb(54, 71, 157);
   padding-top: 10px;
   padding-left: 60px;
   font-size: x-small;
 }
-.row {
-  display: flexbox;
-  padding-bottom: 10px;
+.row1 {
+  display: flex;
 }
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -148,6 +149,9 @@ body {
     margin-left: 5px;
     max-width: 25%;
   }
+  .row1 {
+    display: block;
+  }
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
@@ -157,8 +161,8 @@ body {
   }
 
   .mainCity {
-    display: inline-flex;
-    padding-top: 0px;
+    display: inline-block;
+
     background-color: #f5edc3;
     margin-left: -150px;
   }

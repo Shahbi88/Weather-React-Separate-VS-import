@@ -71,7 +71,7 @@ export default function Search(props) {
       </form>
       {weatherData.ready ? (
         <div>
-          <div className="row">
+          <div className="row1">
             <div className="col-6" id="date">
               {weatherData.date}
             </div>
