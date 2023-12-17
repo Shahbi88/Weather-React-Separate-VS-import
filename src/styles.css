@@ -3,18 +3,6 @@
   text-align: center;
 }
 
-@media (max-width: 800px) {
-  h5 {
-    color: red;
-    font-family: inherit;
-    position: relative;
-    margin-left: 7px;
-    margin-bottom: 30px;
-    padding-top: 30px;
-    font-size: x-large;
-  }
-}
-
 h5 {
   color: grey;
   font-family: inherit;
@@ -146,4 +134,40 @@ body {
 }
 .unit {
   font-size: larger;
+}
+@media (max-width: 800px) {
+  body {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+  .mainCity {
+    display: inline;
+  }
+  #city {
+    color: rgb(164, 40, 164);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .search-form-input {
+    margin-left: 20px;
+    font-size: 25px;
+    border-radius: 8px;
+    margin-right: 5px;
+    max-width: 250px;
+  }
+
+  .less {
+    text-align: auto;
+    font-size: x-small;
+    display: block;
+  }
+  .search-form-button {
+    background-color: #20b1a9;
+    font-size: small;
+    border-radius: 8px;
+    padding: 5px;
+  }
 }
