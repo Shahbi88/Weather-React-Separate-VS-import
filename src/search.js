@@ -4,7 +4,7 @@ import WeatherTemperature from "./weatherTemperature";
 import WeatherForecast from "./weatherforecast";
 
 export default function Search(props) {
-  let [city, setCity] = useState("Paris");
+  let [city, setCity] = useState("Gaza");
   let [weatherData, setWeatherData] = useState({ ready: false });
 
   function changeHTML(response) {
