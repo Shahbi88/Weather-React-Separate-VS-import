@@ -15,8 +15,8 @@ h5 {
 
 .card-body {
   background-color: #fffacd;
-
-  display: inline-block;
+  align-self: center;
+  align-content: center;
 }
 .search-form-input {
   margin-left: 20px;
@@ -138,9 +138,10 @@ body {
   body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
-    padding: 0px;
+
     margin: 0px;
   }
+
   .mainCity {
     display: inline;
   }
@@ -151,11 +152,18 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   }
   .search-form-input {
-    margin-left: 20px;
-    font-size: 25px;
+    margin-left: 25px;
+    font-size: 20px;
     border-radius: 8px;
     margin-right: 5px;
     max-width: 250px;
+  }
+  h5 {
+    font-size: 25px;
+  }
+  .h6 {
+    font-size: 12px;
+    display: flexbox;
   }
   .search-form {
     display: inline-block;
@@ -167,7 +175,7 @@ body {
   }
   .search-form-button {
     background-color: #20b1a9;
-    font-size: small;
+    font-size: 15px;
     border-radius: 8px;
     padding: 5px;
   }
