@@ -103,7 +103,8 @@ h4 {
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 60px 100px;
+  padding: 100px 100px;
+  border-radius: 10px;
 }
 .weather-forecast {
   display: grid;

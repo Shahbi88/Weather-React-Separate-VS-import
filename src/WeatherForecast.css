@@ -3,14 +3,24 @@
   margin-top: 50px;
   margin-right: 20px;
 }
-.earlier-temperature {
-  font-weight: bolder;
-}
+
 .Forecast-icon {
   font-size: x-large;
 }
-.max-temperature {
+.max-temp {
   font-weight: bolder;
+  font-size: 22px;
+}
+.min-temp {
+  color: rgb(94, 93, 93);
+  margin-top: 2px;
+}
+
+.forecast-temperature {
+  display: flex;
+}
+.forecast-day {
+  color: rgb(94, 93, 93);
 }
 .forecast-row {
   display: flex;
