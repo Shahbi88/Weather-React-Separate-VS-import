@@ -96,6 +96,7 @@ h4 {
   padding-top: 10px;
   padding-left: 60px;
   font-size: x-small;
+  text-align: center;
 }
 .row1 {
   display: flex;
@@ -146,7 +147,7 @@ body {
     max-width: 25%;
   }
   .row1 {
-    display: block;
+    display: inline;
   }
 
   body {
@@ -159,14 +160,12 @@ body {
   ul {
     padding-top: 10px;
     display: grid;
+    align-self: center;
+    align-items: center;
+    text-align: center;
     row-gap: 5px;
-    text-align-last: ;
   }
-  #date {
-    justify-content: center;
-    display: inline-block;
-    justify-self: center;
-  }
+
   .mainCity {
     display: inline-block;
 
@@ -201,6 +200,7 @@ body {
   .h6 {
     font-size: 12px;
     display: flexbox;
+    text-align: center;
   }
   .search-form {
     display: inline-flex;
