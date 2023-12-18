@@ -187,7 +187,7 @@ body {
   }
 
   .unit {
-    font-size: small;
+    font-size: 19px;
   }
   .search-form-input {
     margin-left: 25px;
@@ -201,6 +201,7 @@ body {
     font-size: 20px;
     padding-top: 0px;
     padding-left: 0px;
+    display: flex;
   }
   .h6 {
     font-size: 12px;
