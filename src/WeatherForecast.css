@@ -21,6 +21,7 @@
 
 .forecast-temperature {
   display: flex;
+  font-size: small;
 }
 .forecast-day {
   color: rgb(17, 107, 107);
@@ -42,22 +43,27 @@
 }
 @media (max-width: 800px) {
   .forecast-row {
-    font-size: x-small;
+    font-size: xx-small;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
     padding: 0px;
-    margin-left: -190px;
+    margin-left: -180px;
   }
+
   .col {
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-left: 5px;
-    padding-right: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
   .row {
     padding-bottom: 5px;
+  }
+  .forecast-temperature {
+    display: flex;
+    padding: 10px;
+    font-size: 5px;
   }
 }

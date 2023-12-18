@@ -162,6 +162,11 @@ body {
     row-gap: 5px;
     text-align-last: ;
   }
+  #date {
+    justify-content: center;
+    display: inline-block;
+    justify-self: center;
+  }
   .mainCity {
     display: inline-block;
 
@@ -213,5 +218,9 @@ body {
     border-radius: 8px;
     padding: 5px;
     margin-top: 5px;
+  }
+  .footer {
+    display: inline-flex;
+    font-size: 15px;
   }
 }
