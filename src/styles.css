@@ -136,15 +136,18 @@ body {
   font-size: larger;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 720px) {
   header {
     margin-left: 0px;
+    padding-left: 0px;
   }
   .card-body {
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-left: 5px;
     display: block;
     justify-content: center;
-    margin-left: 5px;
-    max-width: 25%;
+    justify-self: center;
   }
   .row1 {
     display: inline;
@@ -154,8 +157,10 @@ body {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     background-color: #fffacd;
-    margin: 0px;
-    padding: 10px;
+
+    padding-left: 0px;
+
+    margin-right: 0px;
   }
   #date {
     margin-top: 0px;
