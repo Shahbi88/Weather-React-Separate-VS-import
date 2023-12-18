@@ -143,8 +143,10 @@ body {
     padding-left: 0px;
   }
   .card-body {
-    max-width: 720px;
     margin: auto;
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-left: 60px;
     justify-content: center;
     justify-self: center;
   }
