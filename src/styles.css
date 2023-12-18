@@ -157,6 +157,11 @@ body {
     margin: 0px;
     padding: 10px;
   }
+  #date {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
   ul {
     padding-top: 10px;
     display: grid;
